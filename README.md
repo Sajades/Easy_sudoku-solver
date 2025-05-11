@@ -3,3 +3,5 @@ This project explores the design, implementation, and performance analysis of de
 
 In this project I used flattened sudoku grid and created 81 features. Then randomly removed 1 value for each puzzle and put them in target column 'y'.
 The goal is to trian the model to find the correct answer of the missing value.
+
+This is a simple model, the only important concept to train this model is to use masking technique to tell the model which values are missing and which values must masked. Because the missing values are scattered among the dataset.
