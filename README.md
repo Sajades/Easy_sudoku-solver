@@ -1,7 +1,8 @@
 # Neural-networks
-This project explores the design, implementation, and performance analysis of deep neural networks across a variety of problems It aims to understand how different architectures, activation functions, optimization techniques, and regularization methods impact model effectiveness.
+This project focuses on the design and implementation of deep neural networks for classification problems, with the goal of understanding how different architectures, optimization strategies, and regularization techniques affect model performance. It represents my first attempt at using neural networks to solve simple Sudoku puzzles.
 
-In this project I used flattened sudoku grid and created 81 features. Then randomly removed 1 value for each puzzle and put them in target column 'y'.
-The goal is to trian the model to find the correct answer of the missing value.
+In this implementation, each Sudoku grid is flattened into 81 input features. For every puzzle, one value is randomly removed and set as the target variable y. The objective is to train the model to accurately predict the missing value.
 
-This is a simple model, the only important concept to train this model is to use masking technique to tell the model which values are missing and which values must masked. Because the missing values are scattered among the dataset.
+A key concept in this model is the use of a masking technique, which helps the network identify which values are missing and should be ignored during training. This is crucial because the missing values are scattered randomly across the dataset.
+
+In the next phase of this project, I plan to modify the underlying data to observe how changes in data characteristics affect preprocessing steps and require adjustments to the model architecture to maintain performance.
